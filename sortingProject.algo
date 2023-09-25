@@ -1,0 +1,22 @@
+ALGORITHM sortingAlgo
+VAR
+   T : ARRAY_OF INTEGER;
+   x,j,i:INTEGER
+   n:= T.length;
+BEGIN
+    FOR i FROM 1 TO n-1 STEP 1  DO
+        x:=T[i]
+        j:=i
+        while (T[j-1]>x) do
+            T[j]:=T[j-1]
+            j:=j-1
+        END_WHILE
+        T[j]:=x
+    END_FOR
+END
+
+
+
+
+
+
